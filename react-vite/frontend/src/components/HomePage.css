@@ -1,0 +1,213 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Sofia&display=swap"); */
+
+/* Full screen background with margin to avoid header overlap */
+.homepage-background {
+  margin-top: 80px; /* Space for fixed header */
+  padding-bottom: 20px; /* Ensure full visibility */
+  background-color: #111; /* Dark background */
+}
+
+body {
+  overflow: auto;
+}
+
+/* Header Styling */
+.homepage-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+/* Center section: Special icon + Search bar + Search button */
+.homepage-center-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+  justify-content: center;
+}
+
+/* Movie icon */
+.homepage-movie-icon {
+  font-size: 24px;
+  color: white;
+}
+
+/* Search bar */
+.homepage-search-bar {
+  margin-left: 150px;
+  padding: 10px 15px !important;
+  font-size: 16px !important;
+  border: 1px solid #f3d2d2 !important;
+  border-radius: 20px !important;
+  outline: none !important;
+  width: 350px !important;
+  height: 30px !important;
+  background-color: white !important;
+  color: black !important;
+  transition: all 0.3s ease;
+}
+
+.homepage-search-bar:focus {
+  width: 400px !important;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Search button */
+.homepage-search-button {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ffb84d;
+  color: black;
+  cursor: pointer;
+}
+
+.homepage-search-button:hover {
+  background-color: #e69a2b;
+}
+
+/* Right section: Icons */
+.homepage-nav-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  min-width: 300px;
+  justify-content: flex-end;
+}
+
+/* Header icons */
+.homepage-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  width: 90px;
+  text-decoration: none;
+}
+
+.homepage-nav-icon {
+  font-size: 24px;
+  color: white;
+}
+
+.homepage-nav-text {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.homepage-nav-item:hover .homepage-nav-icon,
+.homepage-nav-item:hover .homepage-nav-text {
+  color: #ffb84d;
+}
+
+/* Latest Movies Heading */
+
+.homepage-latest-movies-title {
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-left: 20px; /* Align to the left */
+  margin-top: 70px; /* Reduced space below header */
+  margin-bottom: 10px; /* Less gap between text and images */
+}
+
+/* Image Grid: 5 images per row */
+.homepage-movie-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding: 20px;
+  
+  justify-content: left;
+}
+
+/* Movie Box */
+.homepage-movie-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #483e3e;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 10px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.homepage-movie-box:hover {
+  transform: scale(1.05);
+}
+
+/* Movie Image */
+.homepage-movie-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Movie Info */
+.homepage-movie-info {
+  text-align: left;
+}
+
+/* Movie Title */
+.homepage-movie-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Green Rating Box */
+.homepage-movie-rating {
+  background-color: green;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 35px;
+}
+
+/* Hero and Heroine Styling */
+.homepage-hero-heroine {
+  font-size: 14px;
+  margin-bottom: 3px;
+  padding-left: 0px;
+
+}
+
+
+.homepage-hero-name-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures hero and heroine names are aligned on opposite sides */
+  width: 100%; /* Ensures the container takes full width */
+}
+
+.homepage-hero-heroine {
+  font-size: 14px;
+  margin-bottom: 3px;
+}

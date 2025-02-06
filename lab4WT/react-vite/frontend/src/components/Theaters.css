@@ -1,0 +1,147 @@
+/* Theaters.css */
+/* @import url("https://fonts.googleapis.com/css2?family=Sofia&display=swap"); */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.abc
+{
+  background-color: white;
+  color:#000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #f710b1; /* White color for the main heading */
+  font-family: "Sofia", sans-serif; /* Apply Sofia font */
+  text-shadow: 0 0 5px #f710b1, 0 0 10px #f710b1; /* Shining effect */
+}
+
+.movie-details {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.movie-card {
+  background-color: #000; /* Black background for movie card */
+  border: 1px solid #444; /* Dark gray border */
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2); /* Subtle white shadow */
+  color: #00bfff; /* Bright blue text color */
+}
+
+.movie-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.movie-card h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #00bfff; /* Bright blue for movie title */
+  text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff; /* Shining effect */
+}
+
+.movie-card p {
+  margin: 5px 0;
+  color: #add8e6; /* Light blue for paragraph text */
+}
+
+.reviews {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.reviews h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #00bfff; /* Bright blue for reviews heading */
+}
+
+.theater-list {
+  margin-top: 40px;
+}
+
+.theater-list h2 {
+  font-size: 2rem;
+  color: #f710b1; /* White color for the theater list heading */
+  font-family: "Sofia", sans-serif; /* Apply Sofia font */
+  text-shadow: 0 0 5px #f710b1, 0 0 10px #f710b1; /* Shining effect */
+  margin-bottom: 20px;
+}
+
+.theater-container {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: nowrap; /* Prevent wrapping to the next line */
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+  gap: 20px; /* Space between theater cards */
+}
+
+.theater-card {
+  background-color: #000; /* Black background for theater card */
+  border: 1px solid #444; /* Dark gray border */
+  border-radius: 8px;
+  padding: 15px;
+  flex: 0 0 300px; /* Fixed width for each card */
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2); /* Subtle white shadow */
+  color: #fff; /* White text color */
+}
+
+.theater-card h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #ffcc00; /* Bright yellow for theater name */
+  text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00; /* Shining effect */
+}
+
+.theater-card p {
+  margin: 5px 0;
+  color: #f0f0f0; /* Light gray for paragraph text */
+}
+
+.theater-card strong {
+  color: #ffcc00; /* Bright yellow for strong text */
+}
+
+.buy-ticket-button {
+  background-color: #ff4081; /* Bright pink background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px; /* Padding */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Font size */
+  margin-top: 10px; /* Margin on top */
+  text-shadow: 0 0 5px #ff4081, 0 0 10px #ff4081; /* Shining effect */
+}
+
+.buy-ticket-button:hover {
+  background-color: #f50057; /* Darker pink on hover */
+}
+.abc{
+  background-color: #000;
+  height: 100px;
+}
+.abcd
+{
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.bhu{
+  background-color: #000;
+  color: #f0f0f0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
