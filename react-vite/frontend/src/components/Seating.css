@@ -1,0 +1,197 @@
+/* Seating Container */
+.seating-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.seating-main-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: rgb(227, 3, 126);
+}
+
+/* Section */
+.seating-section {
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center each section */
+}
+
+.seating-section-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.seating-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+}
+.seating-rows {
+  display: flex;
+  flex-wrap: wrap; /* Allow seats to wrap onto a new line */
+  gap: 10px; /* Gap between each seat */
+  justify-content: center; /* Center seats horizontally */
+  align-items: center;
+  margin-bottom: 15px; /* Add spacing between rows */
+}
+
+
+
+/* Row name label (A, B, C, etc.) */
+.seating-rows span {
+  font-weight: bold;
+  margin-right: 10px; /* Space between row name and seats */
+}
+
+/* Seat Button */
+button {
+  transition: all 0.3s ease;
+}
+
+button.w-8 {
+  width: 30px;
+  height: 30px;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* Seat State */
+.seating-book-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.seating-book-button:hover {
+  background-color: #45a049;
+}
+
+button.cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+
+
+button.bg-green-600 {
+  background-color: #4caf50;
+}
+
+button.bg-green-600:hover {
+  background-color: #45a049;
+}
+
+button.bg-red-200 {
+  background-color: #ffcccc;
+}
+
+button.border-red-600 {
+  border-color: #f44336;
+}
+
+button.bg-gray-200 {
+  background-color: #f2f2f2;
+}
+
+button.bg-gray-300 {
+  background-color: #e0e0e0;
+}
+
+button.text-white {
+  color: white;
+}
+
+button.text-gray-500 {
+  color: gray;
+}
+
+/* Legend */
+.seating-legend {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.seating-legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.seating-legend-booked {
+  width: 20px;
+  height: 20px;
+  background-color: #f44336;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.seating-legend-available {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.seating-legend-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Selected Seats */
+.seating-selection {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.seating-selection-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.seating-selected-seats {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.seating-book-button:disabled {
+  background-color: #bdbdbd;
+  cursor: not-allowed;
+}
+/* Seat State */
+button.cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+/* For Booked Seats (with red background) */
+button.bg-red-200 {
+  color: black;
+  background-color: #f44336; /* Red background for booked seats */
+  border-color: #f44336; /* Remove border for booked seats */
+}
+
+button.bg-red-200:hover {
+  background-color: #d32f2f; /* Slightly darker red for hover effect */
+}

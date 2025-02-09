@@ -1,0 +1,140 @@
+
+
+/* General Profile Container */
+/* Prevent scrolling on Profile Page */
+.profile-container {
+  overflow: hidden; /* Prevent scrolling */
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */
+  align-items: flex-start; /* Align sections to the left */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Profile Header */
+.profile-header {
+  color: rgb(240, 5, 5);
+  display: flex;
+  justify-content: space-between; /* Space between left and right */
+  align-items: center; /* Vertically center items */
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd; /* Bottom border to separate header from content */
+  position: fixed; /* Fixed at the top of the page */
+  width: 100%; /* Full width */
+  top: 0; /* Align at the top */
+  left: 0; /* Align at the left */
+  height: 50px; /* Set height */
+  background-color: hsl(0, 9%, 6%); /* Set background color */
+  z-index: 1000; /* Ensure it's above other elements */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for the header */
+}
+
+/* Header Left: User Info */
+.header-left h1 {
+  margin-left: 30px;
+  font-size: 18px;
+  color: white;
+}
+
+.header-left p {
+  margin-left: 30px;
+  color: white;
+}
+
+/* Header Right: Profile Icon */
+.header-right {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.profile-icon {
+  font-size: 30px; /* Adjust the size of the profile icon */
+  color: white; /* Set icon color */
+}
+
+/* Media Query: Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: flex-start; /* Align to the left */
+  }
+
+  .header-left {
+    margin-bottom: 5px; /* Add spacing between user info and icon */
+  }
+
+  .header-right {
+    margin-top: 5px;
+  }
+
+  .profile-icon {
+    font-size: 30px; /* Adjust icon size for mobile */
+  }
+}
+
+/* Profile Sections */
+.profile-sections {
+  width: 100%; /* Full width */
+  display: flex;
+  flex-wrap: wrap; /* Ensure wrapping after 2 sections */
+  justify-content: space-between; /* Space evenly */
+  align-items: center;
+  padding-top: 80px; /* Adjust to leave space for fixed header */
+  box-sizing: border-box;
+}
+
+/* Profile Section */
+.profile-section {
+  width: 48%; /* Each section takes 48% width for 2 per row */
+  padding: 20px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 100px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* Responsive Design: Single Column on Small Screens */
+@media (max-width: 768px) {
+  .profile-section {
+    width: 100%; /* Stack all sections in a single column */
+  }
+}
+
+/* Section Header */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-icon {
+  font-size: 24px;
+  color: #333;
+}
+
+.profile-section h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.profile-section p {
+  margin-top: 10px;
+  color: #555;
+}
+
+/* List Styling (For future sections like orders, etc.) */
+.profile-section ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.profile-section ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #555;
+}
