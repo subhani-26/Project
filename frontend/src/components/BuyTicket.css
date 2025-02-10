@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: black;
+}
+.container {
+  text-align: left;
+}
+header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+  background: #d32f2f;
+  color: white;
+  border-radius: 8px 8px 0 0;
+}
+.date-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 20px 0;
+}
+.arrow {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+  background: transparent;
+  color: #333;
+  border-radius: 5px;
+}
+.date-selector {
+  display: flex;
+  gap: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 350px;
+  scroll-behavior: smooth;
+  padding: 0 10px;
+}
+.date-selector div {
+  padding: 10px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  min-width: 80px;
+  transition: background 0.3s, transform 0.2s;
+}
+.date-selector div:hover {
+  background: #b0bec5;
+  transform: scale(1.1);
+}
+.cinema {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+.show-time {
+  background: #4caf50;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  display: inline-block;
+  border: none;
+}
+.show-time:hover {
+  background: #388e3c;
+}
+.timing-buttons {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
